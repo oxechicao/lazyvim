@@ -1,4 +1,5 @@
 return {
+  --- MARDKOWN
   { "iamcco/markdown-preview.nvim", enabled = false },
   { "nvim-treesitter/nvim-treesitter" },
   { "nvim-tree/nvim-web-devicons" },
