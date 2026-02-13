@@ -20,9 +20,6 @@ require("lazy").setup({
     { "LazyVim/LazyVim", import = "lazyvim.plugins" },
     -- import/override with your plugins
     { import = "plugins" },
-    { import = "plugins.defaults" },
-    { import = "plugins.coding" },
-    { import = "plugins.editor" },
     { import = "lazyvim.plugins.extras.formatting.prettier" },
   },
   defaults = {
