@@ -7,7 +7,7 @@ local config = {
     layouts = {
       sidebar = {
         layout = {
-          position = "right",
+          position = "left",
         },
       },
     },

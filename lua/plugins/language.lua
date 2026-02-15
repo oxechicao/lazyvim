@@ -1,7 +1,24 @@
 return {
   --- MARDKOWN
   { "iamcco/markdown-preview.nvim", enabled = false },
-  { "nvim-treesitter/nvim-treesitter" },
+  {
+    "nvim-treesitter/nvim-treesitter",
+    config = function()
+      vim.filetype.add({
+        extension = {
+          tera = "html",
+        },
+        filename = {
+          ["template.html"] = "html",
+        },
+        pattern = {
+          [".*%.html%.tera"] = "html",
+          [".*%.tera"] = "html",
+          [".*%.html"] = "html",
+        },
+      })
+    end,
+  },
   { "nvim-tree/nvim-web-devicons" },
   {
     "MeanderingProgrammer/render-markdown.nvim",
