@@ -1,6 +1,7 @@
 return {
   --- MARDKOWN
   { "iamcco/markdown-preview.nvim", enabled = false },
+  { "oxechicao/markdown-preview.nvim", name = "oxe-markdown-preview" },
   {
     "nvim-treesitter/nvim-treesitter",
     config = function()
