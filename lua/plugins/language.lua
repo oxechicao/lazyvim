@@ -1,7 +1,16 @@
 return {
   --- MARDKOWN
   { "iamcco/markdown-preview.nvim", enabled = false },
-  { "oxechicao/markdown-preview.nvim", name = "oxe-markdown-preview" },
+  {
+    "oxechicao/markdown-preview.nvim",
+    name = "oxe-markdown-preview",
+    cmd = { "MarkdownPreviewToggle", "MarkdownPreview", "MarkdownPreviewStop" },
+    build = "pnpm install && cd app && pnpm install",
+    init = function()
+      vim.g.mkdp_filetypes = { "markdown" }
+    end,
+    ft = { "markdown" },
+  },
   {
     "nvim-treesitter/nvim-treesitter",
     config = function()
