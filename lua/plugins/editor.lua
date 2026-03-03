@@ -4,6 +4,10 @@
 local config = {
   scroll = { enabled = false },
   picker = {
+    files = {
+      hidden = true,
+      ignored = true,
+    },
     layouts = {
       sidebar = {
         layout = {
