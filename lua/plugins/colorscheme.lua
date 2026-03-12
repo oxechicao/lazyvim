@@ -25,9 +25,31 @@ return {
     end,
   },
   {
+    "oxechicao/turnstyle-neovim",
+    priority = 1000,
+    name = "turnstyle",
+    config = function()
+      require("turnstyle").setup({
+        variant = "main",
+        dim_inactive_windows = false,
+        extend_background_behind_borders = true,
+        styles = {
+          bold = true,
+          italic = true,
+          transparency = false,
+        },
+        enable = {
+          terminal = false,
+          legacy_highlights = false, -- Improve compatibility for previous versions of Neovim
+          migrations = false, -- Handle deprecated options automatically
+        },
+      })
+    end,
+  },
+  {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "rose-pine",
+      colorscheme = "turnstyle",
     },
   },
 }
