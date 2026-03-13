@@ -25,6 +25,7 @@ local config = {
 
 return {
   { "akinsho/bufferline.nvim", enabled = false }, -- tabs
+  { "3rd/image.nvim", build = false, opts = { processor = "magick_cli" } },
   {
     "folke/snacks.nvim",
     priority = 1000,
